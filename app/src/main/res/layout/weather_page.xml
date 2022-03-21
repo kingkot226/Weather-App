@@ -1,6 +1,128 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/primaryDarkColor">
 
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="244dp"
+        android:layout_marginTop="12dp"
+        android:text="Wschód/Zachód"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wp_textview_description" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="632dp"
+        android:background="@drawable/background_white"
+        android:rotationX="181"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <TextView
+            android:id="@+id/wp_textview_date_and_time"
+            android:layout_width="140dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="36dp"
+            android:rotationX="181"
+            android:text="Data/czas"
+            android:textAlignment="textEnd"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/wp_textview_cityname"
+        android:layout_width="294dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <ImageView
+        android:id="@+id/wp_textview_icon"
+        android:layout_width="160dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wp_textview_cityname"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <TextView
+        android:id="@+id/wp_textview_description"
+        android:layout_width="270dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="34dp"
+        android:text="Opis"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wp_textview_icon" />
+
+    <TextView
+        android:id="@+id/wp_textview_temperature"
+        android:layout_width="160dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="27dp"
+        android:text="Temp"
+        android:textColor="#FFFFFF"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/wp_textview_icon"
+        app:layout_constraintTop_toBottomOf="@+id/wp_textview_cityname" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="13dp"
+        android:text="Ciśnienie"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wp_textview_description" />
+
+    <TextView
+        android:id="@+id/wp_textview_pressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="22dp"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/wp_textview_sunrise_and_sunset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="57dp"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
 </androidx.constraintlayout.widget.ConstraintLayout>
