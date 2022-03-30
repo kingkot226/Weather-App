@@ -8,5 +8,26 @@
         android:id="@+id/homePage"
         android:name="com.example.pogodynka_kotowicz_kinga.homePage"
         android:label="fragment_home_page"
-        tools:layout="@layout/fragment_home_page" />
+        tools:layout="@layout/fragment_home_page" >
+        <action
+            android:id="@+id/action_homePage_to_weatherPage"
+            app:destination="@id/weatherPage" />
+        <argument
+            android:name="cn"
+            app:argType="string"
+            android:defaultValue="Warszawa"/>
+    </fragment>
+    <fragment
+        android:id="@+id/weatherPage"
+        android:name="com.example.pogodynka_kotowicz_kinga.WeatherPage"
+        android:label="fragment_weather_page"
+        tools:layout="@layout/fragment_weather_page" >
+        <action
+            android:id="@+id/action_weatherPage_to_homePage"
+            app:destination="@id/homePage" />
+        <argument
+            android:name="cn"
+            app:argType="string"
+            android:defaultValue="Warszawa"/>
+    </fragment>
 </navigation>
